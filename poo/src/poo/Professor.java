@@ -5,23 +5,26 @@ import java.util.ArrayList;
 public class Professor {
 	
 	private String nome;
-	
-	private ArrayList<Turma> turma = new ArrayList<Turma>();
+	private long matricula;
+	private long id;
 
 	public String getNome() {
 		return nome;
 	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public ArrayList<Turma> getTurma() {
-		return turma;
+	public long getMatricula() {
+		return matricula;
 	}
-
-	public void setTurma(ArrayList<Turma> turma) {
-		this.turma = turma;
+	public void setMatricula(long matricula) {
+		this.matricula = matricula;
+	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 	
