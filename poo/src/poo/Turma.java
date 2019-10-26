@@ -37,5 +37,11 @@ public class Turma {
 	}
 	
 	
-	
+	//public void adicionarTurma(Professor[] profs, Disciplina d, Aluno[] alunos) {
+		//for (int i = 0; i < profs.length; i++) {
+			//if(professores.contains(profs[i])) {
+			//Depois eu termino esse código :D		
+			//}
+		//}
+	//}
 }

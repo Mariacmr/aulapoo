@@ -1,12 +1,13 @@
 package poo;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Aluno {
 	
 	private String nome;
-	private long matricula;
+	private String matricula;
 	private Turma turma;
+	public List<Aluno> alunos;
 	
 	
 	public Turma getTurma() {
@@ -16,12 +17,11 @@ public class Aluno {
 		this.turma = turma;
 	}
 	
-	Aluno(String nome, long matricula) {
+	Aluno(String nome, String matricula) {
 		this.setNome(nome);
 		this.setMatricula(matricula);
 	}
 	
-	public ArrayList<Aluno> alunos = new ArrayList<Aluno>();
 	
 	public String getNome() {
 		return nome;
@@ -29,11 +29,16 @@ public class Aluno {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public long getMatricula() {
+	public String getMatricula() {
 		return matricula;
 	}
-	public void setMatricula(long matricula) {
+	public void setMatricula(String matricula) {
 		this.matricula = matricula;
+	}
+	
+	public void adicionarAluno(String matricula, String nome) {
+		Aluno aluno = new Aluno(nome, matricula);
+		alunos.add(aluno);
 	}
 	
 
